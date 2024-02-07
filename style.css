@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.body{
+    background: url("../deltaHeader.png");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#board{
+    
+    width:90vmin;
+    height: 92vmin;
+    border: 3px solid white;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.head{
+    background-color: green;
+    border: .25min sold white;
+    border-radius: 7px;
+}
+.snake{
+    background: rgb(174, 255, 192);
+    border: .25min sold white;
+    border-radius: 9px;
+}
+
+.food{
+    border: .25vmin solid greenyellow;
+    border-radius: 14px;
+
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#HiScoreBox{
+    position: absolute;
+    top: 51px;
+    right: 156px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#timer-container{
+    width: 225px;
+    height:100px;
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    top: 9px;
+    left: 150px;
+    
+}
+
+
+#timer{
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+#sequence{
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.sequence-container{
+    width: 225px;
+    height:100px;
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    
+}
+
+.controls{
+    display: flex;
+    justify-content: space-betweenz;
+    width: 25%;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    background-color: aqua;
+}
+.controls button{
+    padding: 25px 0;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100%/4);
+    border-right: 1px solid #ffffff;
+    background-color: aqua;
+}
+#seq{
+    position:relative;
+    top: 40 px;
+    right: 5 px;
+    max-width: 20px;
+
+}
